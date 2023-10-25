@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-proposal',
@@ -11,8 +12,8 @@ export class ProposalComponent {
 
   constructor(
     private fb: FormBuilder,
+    public dialogRef: MatDialogRef<ProposalComponent>
   ) {
-    //criação do formulário
     this.buildFormProposal();
   };
 
@@ -22,11 +23,11 @@ export class ProposalComponent {
       email: [null, [Validators.required, Validators.email]],
       company: [null, [Validators.minLength(3)]],
       phone: [null],
-      proposal: [null, [Validators.required, Validators.minLength(4), Validators.maxLength(200)]],
+      proposal: [null, [Validators.required, Validators.minLength(6)]],
     })
   }
 
   sendProposal() {
-    console.log("Proposta enviada!")
+    this.dialogRef.close("Proposta enviada!")
   }
 }
