@@ -1,0 +1,35 @@
+<form [formGroup]="formProposal">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="name" name="name" />
+    <mat-error> {{formProposal.controls['name'].errors?.['required'] ? 'Campo Obrigatório' : 'O seu nome deve possuir mais de 2 caracteres'}} </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>E-mail</mat-label>
+    <input matInput formControlName="email" name="email" />
+    <mat-error> {{formProposal.controls['email'].errors?.['required'] ? 'Campo Obrigatório' : 'Digite um e-mail válido'}} </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Empresa</mat-label>
+    <input matInput formControlName="company" name="company" />
+    <mat-error>O nome da empresa deve possuir mais de 2 caracteres</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Telefone</mat-label>
+    <input matInput formControlName="phone" name="phone" />
+    <!-- <mat-error> {{form.controls['nome'].errors?.['required'] ? 'Campo Obrigatório' : 'O seu email deve possuir mais de 2 caracteres'}} </mat-error> -->
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Proposta</mat-label>
+    <input matInput formControlName="proposal" name="proposal" />
+    <mat-error> {{formProposal.controls['proposal'].errors?.['required'] ? 'Campo Obrigatório' : 'A sua proposta deve possuir entre 3 e 200 caracteres'}} </mat-error>
+  </mat-form-field>
+
+  <button mat-flat-button color="warn" [mat-dialog-close]>Cancelar</button>
+  <button mat-flat-button color="primary" [disabled]="formProposal.invalid" (click)="sendProposal()">Enviar</button>
+</form>
