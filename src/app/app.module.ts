@@ -21,6 +21,7 @@ import { ProfessionalExperienceComponent } from './components/professional-exper
 import { ProfessionalSummaryComponent } from './components/professional-summary/professional-summary.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProposalComponent } from './components/proposal/proposal.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     ProfessionalExperienceComponent,
     ProfessionalSummaryComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProposalComponent
   ],
   imports: [
     BrowserModule,

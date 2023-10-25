@@ -1,1 +1,5 @@
-<p>footer works!</p>
+<button (click)="openDialogProposal()" mat-flat-button color="primary">Fazer proposta</button>
+
+<div *ngIf="resultModal">
+<p>Proposta enviada com sucesso!</p>
+</div>
