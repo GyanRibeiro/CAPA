@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -35,7 +36,7 @@ import { ProposalComponent } from './components/proposal/proposal.component';
     ProfessionalSummaryComponent,
     EducationComponent,
     SkillsComponent,
-    ProposalComponent
+    ProposalComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,8 +51,9 @@ import { ProposalComponent } from './components/proposal/proposal.component';
     MatIconModule,
     MatDialogModule,
     MatDividerModule,
+    MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
