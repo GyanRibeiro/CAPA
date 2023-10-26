@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Curriculum } from './models/curriculum.model';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetoFinal';
-  curriculum: any = {
+  curriculum: Curriculum = {
     personalData: {
       name: 'João Silva',
       position: 'Front-End Developer',
@@ -52,14 +53,14 @@ export class AppComponent {
         endDate: '2022-06',
         description:
           'Desenvolvimento de um site de portfólio pessoal para exibir projetos e habilidades.',
-        link: 'joaosilva.com',
+        link: 'https://joaosilva.com',
       },
       {
         title: 'Aplicativo Web Responsivo',
         endDate: '2021-02',
         description:
           'Desenvolvimento de um aplicativo web responsivo para uma startup de tecnologia.',
-        link: 'appstartup.com',
+        link: 'https://appstartup.com',
       },
     ],
     languages: ['Português', 'Inglês'],

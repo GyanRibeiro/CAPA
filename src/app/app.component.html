@@ -2,33 +2,32 @@
   <h1>CAPA - Curriculum Application Project in Angular</h1>
 </header>
 
-<main class="container d-flex flex-sm-row flex-column-reverse py-2 px-4">
+<main class="container d-flex flex-sm-row py-2 px-4">
   <section class="col">
     <app-header></app-header>
-
-    <app-professional-summary></app-professional-summary>
-
+    <hr />
+    <app-professional-summary
+      [summary]="curriculum.summary"
+    ></app-professional-summary>
+    <hr />
     <app-professional-experience
       [experiences]="curriculum.experiences"
+      class="horizontal-row"
     ></app-professional-experience>
-
+    <hr />
     <app-education [educationList]="curriculum.education"></app-education>
-
+    <hr />
     <app-courses></app-courses>
-
+    <hr />
     <app-skills [skills]="curriculum.skills"></app-skills>
-
+    <hr />
     <app-languages [languages]="curriculum.languages"></app-languages>
-
+    <hr />
     <app-project [projects]="curriculum.projects"></app-project>
+    <hr />
+    <app-footer></app-footer>
   </section>
-
-  <section class="col">
-    <div>
-      <p>Componentes renderizados</p>
-      <app-footer></app-footer>
-    </div>
-  </section>
+  <section class="design-side-bar"></section>
 </main>
 
 <footer class="container-fluid text-center p-2">

@@ -3,10 +3,9 @@
   <li *ngFor="let project of projects">
     <mat-card>
       <mat-card-header>
-        <mat-card-title
-          >{{ project.title }} -
-          <span>{{ project.endDate }}</span></mat-card-title
-        >
+        <h3>
+          {{ project.title }} - <span>{{ project.endDate }}</span>
+        </h3>
       </mat-card-header>
       <mat-card-content>
         <p>{{ project.description }}</p>

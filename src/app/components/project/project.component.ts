@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-project',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent {
-  @Input() public projects: any;
+  @Input() public projects?: Project[];
 }
