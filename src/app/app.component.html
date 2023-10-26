@@ -2,24 +2,25 @@
   <h1>CAPA - Curriculum Application Project in Angular</h1>
 </header>
 
-<main class="container d-flex flex-sm-row flex-column-reverse  py-2 px-4">
+<main class="container d-flex flex-sm-row flex-column-reverse py-2 px-4">
   <section class="col">
     <app-header></app-header>
 
     <app-professional-summary></app-professional-summary>
 
-    <app-professional-experience></app-professional-experience>
+    <app-professional-experience
+      [experiences]="curriculum.experiences"
+    ></app-professional-experience>
 
-    <app-education></app-education>
+    <app-education [educationList]="curriculum.education"></app-education>
 
     <app-courses></app-courses>
 
-    <app-skills></app-skills>
+    <app-skills [skills]="curriculum.skills"></app-skills>
 
-    <app-languages></app-languages>
+    <app-languages [languages]="curriculum.languages"></app-languages>
 
-    <app-project></app-project>
-
+    <app-project [projects]="curriculum.projects"></app-project>
   </section>
 
   <section class="col">
@@ -27,11 +28,10 @@
       <p>Componentes renderizados</p>
       <app-footer></app-footer>
     </div>
-    </section>
-
+  </section>
 </main>
 
 <footer class="container-fluid text-center p-2">
-  <p> Desenvolvido por (Nomes dos Integrantes) </p>
-  <p> Santander Coders 2023 -Turma 1005 </p>
+  <p>Desenvolvido por (Nomes dos Integrantes)</p>
+  <p>Santander Coders 2023 -Turma 1005</p>
 </footer>
