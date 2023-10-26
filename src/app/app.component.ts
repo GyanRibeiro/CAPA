@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projetoFinal';
   curriculum: any = {
-    personalInfo: {
+    personalData: {
       name: 'João Silva',
       position: 'Front-End Developer',
       location: 'São Paulo, Brazil',
@@ -18,51 +18,51 @@ export class AppComponent {
       github: 'github.com/joaosilva',
     },
     summary:
-      'I am a front-end developer passionate about creating amazing user experiences.',
+      'Sou um desenvolvedor front-end apaixonado por criar experiências de usuário incríveis.',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js'],
     education: [
       {
-        degree: 'Bachelor in Computer Science',
-        institution: 'XYZ University',
+        degree: 'Bacharel em Ciência da Computação',
+        institution: 'Universidade XYZ',
         startDate: '2018',
         endDate: '2022',
       },
     ],
     experiences: [
       {
-        position: 'Junior Front-End Developer',
-        specialty: 'Responsive Web Design',
-        startDate: '2022',
-        endDate: 'Present',
+        position: 'Desenvolvedor Front-End Júnior',
+        specialty: 'Web Design Responsivo',
+        startDate: '2022-05',
+        endDate: 'Atual',
         description:
-          'Working on front-end development projects, focusing on creating responsive layouts.',
+          'Trabalho em projetos de desenvolvimento front-end, focando na criação de layouts responsivos.',
       },
       {
-        position: 'Web Development Intern',
+        position: 'Estagiário de Desenvolvimento Web',
         specialty: 'UI/UX Design',
-        startDate: '2021',
-        endDate: '2022',
+        startDate: '2021-01',
+        endDate: '2022-04',
         description:
-          'Assisted in creating intuitive and attractive user interfaces.',
+          'Auxiliei na criação de interfaces de usuário intuitivas e atraentes.',
       },
     ],
     projects: [
       {
-        title: 'Personal Portfolio Website',
-        endDate: '2022',
+        title: 'Website de Portfólio Pessoal',
+        endDate: '2022-06',
         description:
-          'Development of a personal portfolio website to showcase projects and skills.',
+          'Desenvolvimento de um site de portfólio pessoal para exibir projetos e habilidades.',
         link: 'joaosilva.com',
       },
       {
-        title: 'Responsive Web App',
-        endDate: '2021',
+        title: 'Aplicativo Web Responsivo',
+        endDate: '2021-02',
         description:
-          'Development of a responsive web app for a technology startup.',
+          'Desenvolvimento de um aplicativo web responsivo para uma startup de tecnologia.',
         link: 'appstartup.com',
       },
     ],
-    languages: ['Portuguese', 'English'],
+    languages: ['Português', 'Inglês'],
   };
 
   // {
