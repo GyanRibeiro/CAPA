@@ -3,13 +3,13 @@
   <li *ngFor="let experience of experiences">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>{{ experience.position }}</mat-card-title>
+        <h3>{{ experience.position }}</h3>
       </mat-card-header>
       <mat-card-content>
-        <p>
+        <h4>
           {{ experience.specialty }} - <span>{{ experience.startDate }}</span> -
           <span>{{ experience.endDate }}</span>
-        </p>
+        </h4>
         <p>{{ experience.description }}</p>
       </mat-card-content>
     </mat-card>

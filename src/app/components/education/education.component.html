@@ -3,13 +3,13 @@
   <li *ngFor="let education of educationList">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>{{ education.degree }}</mat-card-title>
+        <h3>{{ education.degree }}</h3>
       </mat-card-header>
       <mat-card-content>
-        <p>
+        <h4>
           {{ education.institution }}, <span>{{ education.startDate }}</span> -
           <span>{{ education.endDate }}</span>
-        </p>
+        </h4>
       </mat-card-content>
     </mat-card>
   </li>
