@@ -6,7 +6,9 @@
   <section class="col">
     <app-header></app-header>
     <hr />
-    <app-professional-summary></app-professional-summary>
+    <app-professional-summary
+      [summary]="curriculum.summary"
+    ></app-professional-summary>
     <hr />
     <app-professional-experience
       [experiences]="curriculum.experiences"
