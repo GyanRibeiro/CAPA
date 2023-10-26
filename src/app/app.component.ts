@@ -24,8 +24,8 @@ export class AppComponent {
       {
         degree: 'Bacharel em Ciência da Computação',
         institution: 'Universidade XYZ',
-        startDate: '2018',
-        endDate: '2022',
+        startDate: '2018-07',
+        endDate: '2022-07',
       },
     ],
     experiences: [
@@ -64,49 +64,4 @@ export class AppComponent {
     ],
     languages: ['Português', 'Inglês'],
   };
-
-  // {
-  //   dadosPessoais: {
-  //     nome: '',
-  //     cargo: 'Desenvolverdor Front-End',
-  //     local: '',
-  //     telefone: '',
-  //     email: '',
-  //     linkedin: '',
-  //     github: '',
-  //   },
-  //   resumo: '',
-  //   habilidades: [],
-  //   formacao: [
-  //     { formacao: '', instituicao: '', dataInicio: '', dataTermino: '' },
-  //   ],
-  //   experiencia: [
-  //     {
-  //       cargo: '',
-  //       especialidade: '',
-  //       dataInicio: '',
-  //       dataTermino: '',
-  //       descricao: '',
-  //     },
-  //     {
-  //       cargo: '',
-  //       especialidade: '',
-  //       dataInicio: '',
-  //       dataTermino: '',
-  //       descricao: '',
-  //     },
-  //     {
-  //       cargo: '',
-  //       especialidade: '',
-  //       dataInicio: '',
-  //       dataTermino: '',
-  //       descricao: '',
-  //     },
-  //   ],
-  //   projetos: [
-  //     { titulo: '', dataTermino: '', descricao: '', link: '' },
-  //     { titulo: '', dataTermino: '', descricao: '', link: '' },
-  //   ],
-  //   idiomas: [],
-  // };
 }
