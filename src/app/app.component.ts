@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Curriculum } from './models/curriculum.model';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetoFinal';
-  curriculum: any = {
+  curriculum: Curriculum = {
     personalData: {
       name: 'João Silva',
       position: 'Front-End Developer',

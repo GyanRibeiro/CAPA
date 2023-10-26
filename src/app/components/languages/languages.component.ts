@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./languages.component.scss'],
 })
 export class LanguagesComponent {
-  @Input() public languages: any;
+  @Input() public languages?: string[];
 }
