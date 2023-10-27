@@ -1,33 +1,36 @@
-<h1>LOREM IPSUM</h1>
-<br>
-<h6>LOREM IPSUM</h6>
-<br>
-<ul>
-    <li class="header-list">
-        <span>
-            Lorem Ipsum
-        </span>
-        |
-    </li>
-    <li class="header-list">
-        <a href="tel:+">(00) 0 0000-0000</a>
-        |
-    </li>
-    <li class="header-list">
-        <span>
-            <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
-        </span>
-        |
-    </li>
-    <li class="header-list">
-        <span>
-            <a target="_blank" href="#">Lorem Ipsum</a>
-        </span>
-        |
-    </li>
-    <li class="header-list">
-        <span>
-            <a target="_blank" href="#">Lorem Ipsum</a>
-        </span>
-    </li>
-</ul>
+<div *ngFor="let personal of personalData">
+    <h1>{{ personal.name }}</h1>
+    <br>
+    <h6>{{ personal.position }}</h6>
+    <br>
+    <ul>
+        <li class="header-list">
+            <span>
+                {{ personal.location }}
+            </span>
+            |
+        </li>
+        <li class="header-list">
+            <a href="tel:{{ personal.phone }}">{{ personal.phone }}</a>
+            |
+        </li>
+        <li class="header-list">
+            <span>
+                <a href="mailto:{{ personal.email }}">{{ personal.email }}</a>
+            </span>
+            |
+        </li>
+        <li id="social-links" class="header-list">
+            <span>
+                <a target="_blank" href="{{ personal.linkedin }}">{{ personal.linkedin }}</a>
+            </span>
+            |
+        </li>
+        <li id="social-links" class="header-list">
+            <span>
+                <a target="_blank" href="{{ personal.github }}">{{ personal.github }}</a>
+            </span>
+        </li>
+    </ul>
+
+</div>

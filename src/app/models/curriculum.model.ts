@@ -4,7 +4,7 @@ import { ProfessionalExperience } from './professional-experience.models';
 import { Project } from './project.model';
 
 export interface Curriculum {
-  personalData: PersonalData;
+  personalData: PersonalData[];
   summary: string;
   skills: string[];
   education: Education[];

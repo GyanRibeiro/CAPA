@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Input, Component } from '@angular/core';
+import { PersonalData } from 'src/app/models/persoanlData.model';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Input() public personalData?: PersonalData[];
 
 }

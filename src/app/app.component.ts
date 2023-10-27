@@ -9,7 +9,7 @@ import { Curriculum } from './models/curriculum.model';
 export class AppComponent {
   title = 'projetoFinal';
   curriculum: Curriculum = {
-    personalData: {
+    personalData: [{
       name: 'João Silva',
       position: 'Front-End Developer',
       location: 'São Paulo, Brazil',
@@ -17,7 +17,7 @@ export class AppComponent {
       email: 'joao.silva@example.com',
       linkedin: 'linkedin.com/in/joaosilva',
       github: 'github.com/joaosilva',
-    },
+    }],
     summary:
       'Sou um desenvolvedor front-end apaixonado por criar experiências de usuário incríveis.',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js'],
