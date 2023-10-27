@@ -4,14 +4,16 @@
     <mat-card>
       <mat-card-header>
         <h3>
-          {{ project.title }} - <span>{{ project.endDate }}</span>
+          {{ project.title }} - <span>{{ project.endDate | dateMask}}</span>
         </h3>
       </mat-card-header>
       <mat-card-content>
         <p>{{ project.description }}</p>
         <p>
           Link do projeto:
-          <a [href]="project.link"> {{ project.link }}</a>
+          <a appStyledLink [linkColor]="'#111'" [href]="project.link">
+            {{ project.link }}</a
+          >
         </p>
       </mat-card-content>
     </mat-card>

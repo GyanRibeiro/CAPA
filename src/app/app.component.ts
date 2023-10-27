@@ -64,5 +64,13 @@ export class AppComponent {
       },
     ],
     languages: ['Português', 'Inglês'],
+    courses: [
+      {
+      title: 'Desenvolvimento Front-end',
+      instituition: 'Ada Tech',
+      workload: 100,
+      desciption: 'Habilidades avançadas em desenvolvimento Front-End com Angular, incluindo criação de componentes dinâmicos, roteamento e ligação de dados para aplicações web interativas e responsivas.',
+      },
+  ],
   };
 }
