@@ -7,8 +7,8 @@
       </mat-card-header>
       <mat-card-content>
         <h4>
-          {{ education.institution }}, <span>{{ education.startDate }}</span> -
-          <span>{{ education.endDate }}</span>
+          {{ education.institution }}, <span>{{ education.startDate | dateMask}}</span> -
+          <span>{{ education.endDate | dateMask}}</span>
         </h4>
       </mat-card-content>
     </mat-card>
