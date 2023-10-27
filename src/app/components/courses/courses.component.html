@@ -1,14 +1,14 @@
-<h2>COURSES</h2>
+<h2>CURSOS COMPLEMENTARES</h2>
 <mat-list>
-    <li *ngFor="let course of courses">
-        <mat-card>
-            <mat-card-header>
-                <h3>{{ course.title }} ({{ course.workload }}h)</h3>
-            </mat-card-header>
-            <mat-card-content>
-                <h4>{{ course.instituition }}</h4>
-                <p>{{ course.desciption }}</p>
-            </mat-card-content>
-        </mat-card>
-    </li>
+  <li *ngFor="let course of courses">
+    <mat-card>
+      <mat-card-header>
+        <h3>{{ course.title }} ({{ course.workload }}h)</h3>
+      </mat-card-header>
+      <mat-card-content>
+        <h4>{{ course.instituition }}</h4>
+        <p>{{ course.desciption }}</p>
+      </mat-card-content>
+    </mat-card>
+  </li>
 </mat-list>
