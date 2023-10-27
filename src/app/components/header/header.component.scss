@@ -1,0 +1,27 @@
+h1{
+    margin-top: 25px;
+    text-align: center;
+}
+h6{
+    font-weight: 700;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li{
+    display: inline;
+}
+
+.header-list{
+    margin-right: 5px;
+}
+
+li > span {
+    padding-right: 5px;
+}
+
+a {
+    color: #000;
+}
