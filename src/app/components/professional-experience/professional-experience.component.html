@@ -7,8 +7,8 @@
       </mat-card-header>
       <mat-card-content>
         <h4>
-          {{ experience.specialty }} - <span>{{ experience.startDate }}</span> -
-          <span>{{ experience.endDate }}</span>
+          {{ experience.specialty }} - <span>{{ experience.startDate | dateMask}}</span> -
+          <span>{{ experience.endDate | dateMask}}</span>
         </h4>
         <p>{{ experience.description }}</p>
       </mat-card-content>
