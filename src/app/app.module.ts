@@ -23,6 +23,7 @@ import { ProfessionalSummaryComponent } from './components/professional-summary/
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProposalComponent } from './components/proposal/proposal.component';
+import { dateMaskPipe } from './components/pipes/date-mask.pipe';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ProposalComponent } from './components/proposal/proposal.component';
     EducationComponent,
     SkillsComponent,
     ProposalComponent,
+    dateMaskPipe,
   ],
   imports: [
     BrowserModule,
