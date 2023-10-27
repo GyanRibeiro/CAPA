@@ -23,6 +23,7 @@ import { ProfessionalSummaryComponent } from './components/professional-summary/
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProposalComponent } from './components/proposal/proposal.component';
+import { StyledLink } from './directives/styled-link.ditective';
 import { dateMaskPipe } from './components/pipes/date-mask.pipe';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { dateMaskPipe } from './components/pipes/date-mask.pipe';
     EducationComponent,
     SkillsComponent,
     ProposalComponent,
+    StyledLink,
     dateMaskPipe,
   ],
   imports: [
