@@ -2,6 +2,8 @@
 @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
 @import url('https://fonts.cdnfonts.com/css/tt-chocolates');
 
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -12,7 +14,7 @@ body {
     color: #2f2f2f;
 
     h1,h2 {
-        font-family: 'Glacial Indifference', sans-serif;
+        font-family: 'Glacial Indifference', sans-serifF;
     }
     
     h1 {
@@ -48,4 +50,55 @@ mat-card {
     mat-card-content {
         padding-left: 0 !important;
     }
+}
+.header-style > h1{
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-style > h6{
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-style > ul{
+    list-style-type: none;
+    text-align: center;
+}
+.header-style > ul > li{
+    display: inline;
+}
+
+.header-style > ul > .header-list{
+    margin-right: 5px;
+}
+
+.header-style > ul> li > span {
+    padding-right: 5px;
+}
+
+.header-style > ul > li > a, .header-style > ul > li > span > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header-style > ul > #social-links {
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: #101414;
+}
+
+#footer > p {
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+#footer > p > b {
+    color: #ff944c;
+}
+
+#footer > hr {
+    color: #f5f5f5;
 }

@@ -19,7 +19,7 @@ export class AppComponent {
       github: 'github.com/joaosilva',
     }],
     summary:
-      'Sou um desenvolvedor front-end apaixonado por criar experiências de usuário incríveis.',
+      'Sou um Desenvolvedor Web apaixonado por criar experiências digitais inovadoras e funcionais. Meu foco está em unir estética e usabilidade para elevar o padrão das interfaces de usuário. Busco constantemente a excelência e estou comprometido em criar soluções de alta qualidade que cativem os usuários.',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js'],
     education: [
       {
